@@ -34,7 +34,6 @@ export const App = () => {
     setContacts(prevContacts => [...prevContacts, newProfile]);
   };
 
-  const inputId = nanoid();
 
   const deleteContact = id => {
     setContacts(prevContacts => prevContacts.filter(el => el.id !== id));
